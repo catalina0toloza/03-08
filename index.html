@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="title" content="Calidad de vida en Santiago">
+<meta name="description" content="La descripción breve">
+<meta name="keywords" content="pobreza, vivienda, población, Santiago, calidad">
+<title>Calidad de vida en Santiago</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+<link href="style.css" rel="stylesheet">
+</head>
+<body id="page-top">
+<!--acá está la navegación--> 
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">Calidad de vida en Santiago</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#primera">Densidad</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#segunda">Vivienda</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#tercera">Pobreza</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#cuarta">Población</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--acá está el encabezado, que contiene el video-->
+<header>
+  <div class="overlay"></div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+       <source src="https://raw.githubusercontent.com/catalina0toloza/Videopagina/gh-pages/Video/VIDEO1.mp4" type="video/mp4">
+
+  </video>
+  <div class="container h-100">
+    <div class="d-flex text-center h-100">
+      <div class="my-auto w-100 text-white">
+        <h1 class="display-3">Calidad de vida de Santigo</h1>
+        <h2>Comparación entre comunas</h2>
+      </div>
+    </div>
+  </div>
+</header>
+<aside>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-md-3 mb-3">
+       <p><i class="fas fa-users"></i> <a class="js-scroll-trigger" href="#población">Densidad</a>, se trata del promedio de personas de una región o de un país que existe en relación a una cierta unidad superficial.
+      </div>
+      <div class="col-sm-6 col-md-3 mb-3">
+        <p><i class="fas fa-home"></i> <a class="js-scroll-trigger" href="#viviendas">Vivienda</a>, La comuna con más viviendas es La Florida, con 97,137  viviendas, mientras que la comuna de San Ramón es la que presenta menor número, con un total de 22,16  de viviendas.</p>
+      </div>
+      <div class="col-sm-6 col-md-3 mb-3">
+    <p><i class="fas fa-coins"></i> <a class="js-scroll-trigger" href="#pobreza">Pobreza</a>, La comuna con la peor calidad de vida en la Región Metropolitana es la comuna San Ramón, con un 16,7% de pobreza. En comparación, la comuna con mejor calidad de vida es la comuna Las Condes con un 2,3% de pobreza.</p>
+      </div>
+      <div class="col-sm-6 col-md-3 mb-3">
+       <p><i class="fas fa-users"></i> <a class="js-scroll-trigger" href="#población">Población</a>,ctualmente, la comuna con mayor población de la Región Metropolitana es la comuna de La Florida, con 366.916 habitantes.</p>
+      </div>
+    </div>
+  </div>
+</aside>
+<!--acá se llama a la página que contiene la primera visualización-->
+<section id="primera">
+  <iframe src="viz-01.html" scrolling="no" frameborder="0"></iframe>
+</section>
+<!--acá se llama a la página que contiene la segunda visualización-->
+<section id="segunda">
+  <iframe src="viz-02.html" scrolling="no" frameborder="0"></iframe>
+</section>
+<!--acá se llama a la página que contiene la tercera visualización-->
+<section id="tercera">
+  <iframe src="viz-03.html" scrolling="no" frameborder="0"></iframe>
+</section>
+<!--acá se llama a la página que contiene la cuarta visualización-->
+<section id="cuarta">
+  <iframe src="viz-04.html" scrolling="no" frameborder="0"></iframe>
+</section>
+<!--acá está el pie de página-->
+<footer>
+<div class="container">
+<div class="row">
+<div class="col small">
+<p>Desarrollado con <a href="http://getbootstrap.com/">Bootstrap</a>, <a href="https://startbootstrap.com/snippets/">Code Snippets de Start Bootstrap</a>, <a href="https://fontawesome.com/">Font Awesome</a>, <a href="https://p5js.org/es/">p5.js</a></p>
+    <p>Monserrat Mella | Constanza Cea | Catalina Toloza </p>
+<p>Seminario Gráfica Computacional I 2018 | Primer Semestre</p>
+</div>
+</div>
+</div>
+</footer>
+<!-- Javascript de Bootstrap -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/menu.js"></script>
+</body>
+</html>

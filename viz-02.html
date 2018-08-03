@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+<title>Primera</title>
+</head>
+<body>
+<!--Nada más que p5.js para dibujar en el body de esta página-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>
+<script>
+    
+    
+    var comunaSantiago; 
+function preload (){
+    
+    comunaSantiago=loadTable("https://raw.githubusercontent.com/catalina0toloza/csv/gh-pages/comuna.csv", "csv", "header");
+    
+}
+    
+    
+function setup(){
+  var canvas = createCanvas(windowWidth,500);
+  canvas.position(0,0)
+  noStroke();
+  smooth();
+}
+function draw(){
+  background(158,158,158);
+
+     fill(255,255,255);
+      ellipse(((windowWidth/6)*1),190,100,100);
+      textAlign(CENTER);
+      text("San Ramón",((windowWidth/6)*1),300);
+      textSize(15);
+      text("14.898,90",((windowWidth/6)*1),340);
+      
+     fill(255,255,255);
+      ellipse(((windowWidth/6)*2),190,75,75);
+         textAlign(CENTER);
+      text("San Joaquín",((windowWidth/6)*2),300);
+      text("9.871,08",((windowWidth/6)*2),340);
+    
+fill(255,255,255);
+      ellipse(((windowWidth/6)*3),190,50,50);
+      textAlign(CENTER);
+      text("Pudahuel",((windowWidth/6)*3),300);
+      text("10.728,68",((windowWidth/6)*3),340);
+    
+     fill(255,255,255);
+      ellipse(((windowWidth/6)*4),190,30,30);
+      textAlign(CENTER);
+      text("Las Condes",((windowWidth/6)*4),300);
+      text("2.519,84",((windowWidth/6)*4),340);
+    
+     fill(255,255,255);
+      ellipse(((windowWidth/5)*4),190,15,15);
+      textAlign(CENTER);
+      text("La Florida",((windowWidth/5)*4),300);
+      text("9.356,62",((windowWidth/5)*4),340);
+    
+    textSize(15);
+    textStyle(BOLD);
+    text('NUMERO DE VIVIENDAS', (windowWidth/2), height/10);
+} 
+
+function windowResized() {
+  resizeCanvas(windowWidth, 500);
+}   
+</script>
+</body>
+</html>

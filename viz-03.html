@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Ejemplo</title>
+</head>
+
+<body>
+    <!--Nada más que p5.js para dibujar en el body de esta página-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>
+    <script>
+      var pobreza = {
+sanramon: 16.7,
+sanjoaquin: 7.4,
+pudahuel: 7.1,
+lascondes: 2.3,
+laflorida: 9.6
+}
+ 
+
+function setup(){
+  var canvas = createCanvas(windowWidth,500);
+  canvas.position(0,0)
+  noStroke();
+  smooth();
+
+}
+function draw(){
+  background(0);
+  fill(255)
+     
+    textAlign(CENTER);
+      textSize(pobreza.sanramon*(windowWidth/150));
+    text(pobreza.sanramon, ((windowWidth/6)*1), height/2);
+    textSize(15);
+    text('San Ramon', ((windowWidth/6)*1), height/3+150);
+ 
+    textSize(pobreza.sanjoaquin*(windowWidth/150));
+     text(pobreza.sanjoaquin, ((windowWidth/6)*2), height/2);
+    textSize(15);
+    text('San Joaquin', ((windowWidth/6)*2), height/3+150);
+    
+    
+     textSize(pobreza.pudahuel*(windowWidth/150));
+     text(pobreza.pudahuel, ((windowWidth/6)*3), height/2);
+    textSize(15);
+    text('Pudahuel', ((windowWidth/6)*3), height/3+150);
+   
+    
+     textSize(pobreza.lascondes*(windowWidth/150));
+     text(pobreza.lascondes, ((windowWidth/6)*4), height/2);
+    textSize(15);
+    text('Las Condes', ((windowWidth/6)*4), height/3+150);
+
+    
+    textSize(pobreza.laflorida*(windowWidth/150));
+     text(pobreza.laflorida, ((windowWidth/6)*5), height/2);
+    textSize(15);
+    text('La Florida', ((windowWidth/6)*5), height/3+150);
+
+    textSize(15);
+    textStyle(BOLD);
+    text('ÍNDICE DE POBREZA EN SANTIAGO', (windowWidth/2), height/10);
+    
+} 
+function windowResized() {
+  resizeCanvas(windowWidth, 500);
+}   
+
+    </script>
+</body>
+
+</html>
